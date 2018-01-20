@@ -1,0 +1,26 @@
+if (process == 0){
+    // send 127 initial values
+    var n = 622
+    for (i=0; i< 127; i++){
+        n = (n * 8505) % (2^31 - 1);
+        n = ((n * 129749) + 1234) % (2^31 -1);
+        send (n % 10000)
+    }
+}
+
+var f = 0;
+var prev, next;
+for (var j=0; j<126; j++){
+    prev = receive
+    for (var i = 0; i<126 && f==0; i++){
+        next = receive
+        if ( next < prev){
+            send prev
+        } else {
+            send next
+            f = 1;
+        }
+    }
+     send prev;
+}
+// done!

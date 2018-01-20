@@ -1,0 +1,22 @@
+var h = 0;
+
+(while true){
+  var f = false;
+  var d = 2;
+  var e = 2;
+  (while true){
+    (while true) {
+      if (b == d * e) f = true;
+      e = e + 1;
+      if (b == e) break;
+    }
+    d = d + 1;
+    if (b == d) break;
+  }
+
+  if (f) h = h + 1;
+  if (b == c) break;
+  b = b + 17;
+}
+
+console.log(h);

@@ -1,0 +1,40 @@
+set b 57 
+set c b (c = 57)
+jnz a 2 (ok, into phase 2, a is now 1)
+jnz 1 5
+mul b 100 (b is now 57000)
+sub b -100000 (b is -53000)
+set c b (c is now -53000)
+sub c -17000 (c is now -70000)
+set f 1
+
+;; entry search point
+set d 2
+set e 2
+
+;; outer loop
+set g d
+
+;; inner loop
+mul g e (multiple g*e)
+sub g b 
+jnz g 2
+set f 0 (set f to 0 if b==g*e)
+sub e -1 (add one to e)
+set g e (set g to e)
+sub g b
+jnz g -8 (if b!=e jump to inner loop)
+
+sub d -1 (add one to d)
+set g d 
+sub g b 
+jnz g -13 (if b!=d jump to outer loop)
+
+jnz f 2
+sub h -1 (if f was not zero add 1 to h) 
+set g b
+sub g c
+jnz g 2 
+jnz 1 3 (finish!)
+sub b -17
+jnz 1 -23 (if b != c, add 17 to b and go back to entry search point)
