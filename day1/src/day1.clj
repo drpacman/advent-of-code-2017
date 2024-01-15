@@ -17,4 +17,5 @@
     (twoEqual list i offset))))
      
 (defn -main [& args]
-  (println (sumDuplicateNext (map str input) (/ (count input) 2))))
+  (println "Part1: " (sumDuplicateNext (map str input) 1))
+  (println "Part2: " (sumDuplicateNext (map str input) (/ (count input) 2))))
