@@ -60,7 +60,7 @@
    (+ (Math/abs (coord :x)) (Math/abs (coord :y))))
 
 (defn -main [& args]
-  (let [target 368078
+  (let [target 265149
         resultA (coords (partial = target) (partial sequentialElem))
         resultB (coords (partial < target) (partial summedElem))]
     (println "Manhattan distance to" target "is" (manhattanDist (resultA :key)))
