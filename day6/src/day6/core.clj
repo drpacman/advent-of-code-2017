@@ -25,7 +25,7 @@
 
 (defn count-to-repetition [bank]
   (loop [ steps 0 state bank states [] ]
-    (println steps state (count states))
+    ;(println steps state (count states))
     (if (some #{ state } states )
        { 
          :steps steps 
