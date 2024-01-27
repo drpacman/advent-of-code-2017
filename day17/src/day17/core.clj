@@ -24,7 +24,7 @@
   (nth (drop-while #(not= target %) (spin step times)) 1))
 
 (defn -main [& args]
-  (println "Part 1" (next-item 312 2017 2017))
-  (println "Part 2" (second-item 312 50000000))
+  (println "Part 1" (next-item 344 2017 2017))
+  (println "Part 2" (second-item 344 50000000))
   )
     

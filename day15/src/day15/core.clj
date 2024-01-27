@@ -14,6 +14,6 @@
     (count (filter #(apply lower-match %)(take iters results)))))
 
 (defn -main [& args]
-  (println "part 1 answer is " (compare-generators (generator 634 16807)(generator 301 48271) 40000000))
-  (println "part 2 answer is " (compare-generators (picky-generator 634 16807 4)(picky-generator 301 48271 8) 5000000))
+  (println "part 1 answer is " (compare-generators (generator 703 16807)(generator 516 48271) 40000000))
+  (println "part 2 answer is " (compare-generators (picky-generator 703 16807 4)(picky-generator 516 48271 8) 5000000))
   )
