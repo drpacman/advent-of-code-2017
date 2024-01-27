@@ -103,7 +103,7 @@
   (let [ validation-results (calculate-day-14-result "flqrgnkx") ]
     (print-grid validation-results)
     (println "day 14 part 1 validate" (calculate-day-14-part1 validation-results)))
-  (let [ results (calculate-day-14-result "nbysizxe") ]
+  (let [ results (calculate-day-14-result "xlqgujun") ]
     (println "day 14 part 1" (calculate-day-14-part1 results)))
   )
 
@@ -111,6 +111,6 @@
   (let [ validation-results (calculate-day-14-result "flqrgnkx") ]
     (print-grid validation-results)
     (println "day 14 part 2 validate" (count (calculate-day-14-part2 validation-results))))
-  (let [ results (calculate-day-14-result "nbysizxe") ]
-    (println "day 14 part 2 validate" (count (calculate-day-14-part2 results))))
+  (let [ results (calculate-day-14-result "xlqgujun") ]
+    (println "day 14 part 2 " (count (calculate-day-14-part2 results))))
 )
